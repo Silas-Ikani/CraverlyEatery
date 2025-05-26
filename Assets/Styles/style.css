@@ -1,0 +1,162 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .navbar-brand, .card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* Navbar */
+nav {
+    padding: 30px;
+}
+
+a.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+    position: relative;
+}
+a.nav-link:hover {
+    color: #ff0000;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #ff0000;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* Hero Section */
+#hero {
+    height: 90vh;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    background: url(../Images/pexels-jonathanborba-2983101.jpg) center/cover no-repeat;
+
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    max-width: 700px;
+    min-height: 500px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-overlay .hero-btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    background-color: #ff0000;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-3px);
+}
+
+/* .btn-high {
+} */
+
+
+
+.underline {
+    display: block;
+    margin-top: 8px;
+    margin-left: 0;
+    width: 60px;
+    height: 4px;
+    background: #ff0000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Menu section */
+.menu-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.menu-section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.menu-section .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1.25rem;
+    border: none;
+    overflow: hidden;
+}
+.menu-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section .card img {
+    border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.menu-section .card-body {
+    padding: 1.25rem;
+    background-color: #fff;
+}
+
+.menu-section .card-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.menu-section .card-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+.menu-section .card-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff0000;
+}
