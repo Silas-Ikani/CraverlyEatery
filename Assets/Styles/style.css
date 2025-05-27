@@ -1,5 +1,6 @@
 body {
-  font-family: 'Inter', sans-serif;
+    background-color: fffafb;
+    font-family: 'Inter', sans-serif;
 }
 
 h1, h2, h3, .navbar-brand, .card-title {
@@ -9,7 +10,7 @@ h1, h2, h3, .navbar-brand, .card-title {
 
 /* Navbar */
 nav {
-    padding: 30px;
+    padding: 30px 0;
 }
 
 a.nav-link {
@@ -19,14 +20,14 @@ a.nav-link {
     position: relative;
 }
 a.nav-link:hover {
-    color: #ff0000;
+    color: #fa2525;
 }
 
 .nav-link::after {
     content: '';
     width: 0;
     height: 4px;
-    background: #ff0000;
+    background: #fa2525;
     border-radius: 20px;
     position: absolute;
     left: 0;
@@ -40,7 +41,7 @@ a.nav-link:hover {
 
 /* Hero Section */
 #hero {
-    height: 90vh;
+    height: 100vh;
     position: relative;
     color: white;
     display: flex;
@@ -51,7 +52,6 @@ a.nav-link:hover {
 
 .hero-overlay {
     background: url(../Images/pexels-jonathanborba-2983101.jpg) center/cover no-repeat;
-
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
@@ -81,19 +81,25 @@ a.nav-link:hover {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
-    background-color: #ff0000;
+    background-color: #fa2525;
     color: #fff;
     transition: all 0.3s ease;
 }
 
-.hero-btn:hover {
-    filter: brightness(1.1);
+.hero-overlay .hero-btn:hover {
+    background-color: #fff;
+    color: #fa2525;
     transform: translateY(-3px);
 }
 
-/* .btn-high {
-} */
-
+@media (max-width: 768px) {
+    .hero-overlay {
+        min-height: 100vh;
+        max-width: 100%;
+        padding: 1.5rem 1rem;
+    }
+    
+}
 
 
 .underline {
@@ -102,20 +108,19 @@ a.nav-link:hover {
     margin-left: 0;
     width: 60px;
     height: 4px;
-    background: #ff0000;
+    background: #fa2525;
     border-radius: 2px;
     transition: all 0.3s ease;
 }
 
 /* Menu section */
 .menu-section {
-    background-color: #f8f9fa;
+    background-color: #ff0000;
     padding: 60px 0;
 }
 
 .menu-section h2 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
     font-size: 2rem;
     margin-bottom: 40px;
     color: #222;
@@ -133,6 +138,8 @@ a.nav-link:hover {
 }
 
 .menu-section .card img {
+    height: 220px;
+    object-fit: cover;
     border-radius: 1.25rem 1.25rem 0 0;
 }
 
@@ -158,5 +165,106 @@ a.nav-link:hover {
 .menu-section .card-price {
     font-size: 1rem;
     font-weight: 600;
-    color: #ff0000;
+    color: #fa2525;
+}
+
+.menu-section .btn-high {
+    width: 170px;
+    background-color: #fa2525;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+
+}
+.menu-section .btn-high:hover {
+    background: #fff;
+    color: #fa2525;
+}
+
+/* Testimonial section */
+.testimonial .card {
+    border: 0px 0px 2px 0px solid #fa2525;
+    background-color: #fffafb;
+    padding: 1rem;
+}
+.testimonial .card-body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+
+
+
+/* Order-sectione */
+.order-section {
+    background-color: #fffafb;
+}
+
+.order-section .section-title::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: #fa2525;
+}
+.order-section .btn-order {
+    background-color: #fa2525;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.order-section .btn-order:hover {
+    background: #fff;
+    color: #fa2525;
+}
+
+.order-section .order-text {
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    color: #fa2525;
+}
+.section-title::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: #fa2525;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: #fa2525;
+}
+
+.ff-secondary {
+    font-family: 'Pacifico', cursive;
 }
