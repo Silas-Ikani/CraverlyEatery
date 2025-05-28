@@ -96,8 +96,8 @@ a.nav-link:hover {
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
-    max-width: 600px;
-    min-height: 500px;
+    /* max-width: 600px; */
+    min-height: 550px;
     padding: 2rem 1.5rem;
     display: flex;
     align-items: center;
@@ -359,6 +359,35 @@ a.nav-link:hover {
 .footer .social-icons a {
     color: #fff;
     font-size: 1.5rem;
-    margin-right: 15px;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+}
+.footer .social-icons a:hover {
+    color: #fa2525;
+    transform: scale(1.2);
+}
+
+
+
+
+
+/* onScroll effects/animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.zoom {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.6s ease;
+}
+
+.zoom.active {
+  opacity: 1;
+  transform: scale(1);
 }
