@@ -3,7 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-h1, h2, h3, .navbar-brand, .card-title {
+h1, h2, h3, .card-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
@@ -215,6 +215,12 @@ a.nav-link:hover {
 }
 
 /* About section */
+.about-section img {
+    width: 500px;
+    height: 500px;
+    border-radius: 1.25rem;
+}
+
 .about-section .section-title {
     font-size: 1rem;
 }
@@ -243,7 +249,7 @@ a.nav-link:hover {
 
 /* Testimonial section */
 .testimonial .card {
-    border: 0 0 2px 0 solid #fa2525;
+    /* border-left: 2px solid; */
     background-color: #fffafb;
     padding: 1rem;
 }
@@ -254,11 +260,10 @@ a.nav-link:hover {
 
 
 
-/* Order-sectione */
+/* Order-section */
 .order-section {
     background-color: #fffafb;
 }
-
 
 .order-section .section-title::before {
     display: none;
@@ -292,5 +297,68 @@ a.nav-link:hover {
     color: #fa2525;
 }
 
+@media (max-width: 960px) {
+    .order-section .order-img {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .order-section .order-img {
+        width: 400px;
+        height: auto;
+    }
+}
 
 
+
+/* Footer secion */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer .section-title::before {
+    display: none;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+.quick-links a {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    transition: 0.3s ease;
+    /* font-weight: 500; */
+    /* font-family: 'poppins', sans-serif; */
+    /* position: relative; */
+}
+.quick-links a:hover {
+    color: #fa2525;
+}
+
+.quick-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ff0000;
+    transition: width 0.3s ease;
+}
+.quick-links a:hover::after {
+    width: 100%;
+}
+
+.footer .contact i {
+    color: #fa2525;
+}
+.footer .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
