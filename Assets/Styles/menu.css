@@ -116,7 +116,7 @@ a.nav-link:hover {
     color: #fa2525;
     background: #fff;
     border: 2px solid #fa2525;
-    margin: 0 0.5rem;
+    /* margin: 0 0.5rem; */
     border-radius: 50px;
 }
 .nav-pills .nav-link::after {
