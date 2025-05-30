@@ -1,0 +1,194 @@
+body {
+    background-color: #fffafb;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, .card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    color: #fa2525;
+}
+.section-title::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: #fa2525;
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: #fa2525;
+}
+
+.underline {
+    display: block;
+    margin-top: 8px;
+    margin-left: 0;
+    width: 60px;
+    height: 4px;
+    background: #fa2525;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.ff-secondary {
+    font-family: 'Pacifico', cursive;
+}
+
+/* Navbar */
+nav {
+    padding: 30px 0;
+}
+
+a.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+    position: relative;
+}
+a.nav-link:hover {
+    color: #fa2525;
+}
+
+.nav-link::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #fa2525;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Menu-header section */
+.menu-header {
+    background-image: url('../Images/menu-bg.jpg'); /* Add a soft background */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    padding: 7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* filter */
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+}
+.hero-links a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.hero-links a.active {
+    color: #fa2525;
+    font-weight: 700;
+}
+
+/* Menu-tabs section */
+.nav-pills .nav-link {
+    color: #fa2525;
+    background: #fff;
+    border: 2px solid #fa2525;
+    margin: 0 0.5rem;
+    border-radius: 50px;
+}
+.nav-pills .nav-link::after {
+    display: none;
+}
+.nav-pills .nav-link.active {
+    background: #ff0000;
+}
+
+.menu-card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.menu-card .btn-order {
+    background-color: #fa2525;
+    color: #fff;
+    border-radius: 20px;
+}
+
+
+
+/* Footer secion */
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer .section-title::before {
+    display: none;
+}
+
+.quick-links li {
+    margin-bottom: 10px;
+}
+.quick-links a {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    transition: 0.3s ease;
+    /* font-weight: 500; */
+    /* font-family: 'poppins', sans-serif; */
+    /* position: relative; */
+}
+.quick-links a:hover {
+    color: #fa2525;
+}
+
+.quick-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ff0000;
+    transition: width 0.3s ease;
+}
+.quick-links a:hover::after {
+    width: 100%;
+}
+
+.footer .contact i {
+    color: #fa2525;
+}
+.footer .social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+.footer .social-icons a:hover {
+    color: #fa2525;
+    transform: scale(1.2);
+}
