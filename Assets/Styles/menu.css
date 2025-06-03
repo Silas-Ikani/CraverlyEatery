@@ -79,6 +79,20 @@ a.nav-link:hover {
     width: 100%;
 }
 
+.navbar-item a.active {
+    color: #fa2525;
+}
+.nav-item a.active::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #fa2525;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
 /* Menu-header section */
 .menu-header {
     background-image: url('../Images/menu-bg.jpg'); /* Add a soft background */
@@ -131,6 +145,13 @@ a.nav-link:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
+
+.menu-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
 .menu-card .btn-order {
     background-color: #fa2525;
     color: #fff;
