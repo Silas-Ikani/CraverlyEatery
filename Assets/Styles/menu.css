@@ -213,3 +213,12 @@ a.nav-link:hover {
     color: #fa2525;
     transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+    nav {
+        padding: 10px 0;
+    }
+    .navbar-brand img {
+        width: 100px;
+    }
+}
