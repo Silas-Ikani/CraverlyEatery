@@ -133,21 +133,21 @@ a.nav-link:hover {
     transform: translateY(-3px);
 }
 
-@media (max-width: 768px) {
-    nav {
-        padding: 0;
-    }
-    .hero-overlay {
-        min-height: 90vh;
-        padding: 1.5rem 1rem;
-    }
-    
-}
 
 @media (max-width: 1440px) {
     .hero-overlay {
         min-height: 80vh;
         padding: 1rem 0.5rem;
+    }
+    
+}
+@media (max-width: 768px) {
+    nav {
+        padding: 0;
+    }
+    .hero-overlay {
+        min-height: 100vh;
+        padding: 1.5rem 1rem;
     }
     
 }
